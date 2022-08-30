@@ -15,11 +15,11 @@ spec:
       containers:
        resources: 
         limits:
-           memory: 256Mi
-           cpu :   125m
+            memory: 256Mi
+             cpu: 125m
         requests:
-           memory: 256Mi
-           cpu:    125m
+             memory: 256Mi
+             cpu: 100m
         - name: app
           image: gcr.io/PROJECT_ID/IMAGE:TAG
           imagePullPolicy: Always
