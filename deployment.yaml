@@ -17,7 +17,7 @@ spec:
         limit:
            memory: "128Mi"
            cpu : "125m"
-        request:
+        requests:
            memory: "64Mi"
            cpu: "50m"
         - name: app
