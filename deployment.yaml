@@ -13,6 +13,13 @@ spec:
         app: github-actions-gke
     spec:
       containers:
+       resources: 
+        limit:
+           memory: "128Mi"
+           cpu : "125m"
+        request:
+           memory: "64Mi"
+           cpu: "50m"
         - name: app
           image: gcr.io/PROJECT_ID/IMAGE:TAG
           imagePullPolicy: Always
