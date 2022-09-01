@@ -15,9 +15,11 @@ spec:
       containers:
         - name: app
           image: gcr.io/PROJECT_ID/IMAGE:TAG
-          resources: 
+          resources:
             limits:
               cpu: 500m
+              memory: 256Mi
             requests:
               cpu: 200m
+              memory: 256Mi
           imagePullPolicy: Always
