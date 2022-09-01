@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: 123gcr.io/PROJECT_ID/IMAGE:TAG
+          image: gcr.io.asd/PROJECT_ID/IMAGE:TAG
           resources:
             limits:
               cpu: 500m
