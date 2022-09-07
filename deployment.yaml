@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: github-actions-gke
+  name: app1
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: github-actions-gke
+      app: app1
   template:
     metadata:
       labels:
-        app: github-actions-gke
+        app: app1
     spec:
       containers:
         - name: app
-          image: gcr.io.test/PROJECT_ID/IMAGE:TAG
+          image: gcr.io/PROJECT_ID/IMAGE:TAG
           resources:
             limits:
               cpu: 500m
