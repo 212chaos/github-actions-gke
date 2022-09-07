@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: github-actions-gke
+  name: app1
 spec:
   selector:
-    app: github-actions-gke
+    app: app1
   type: LoadBalancer
   ports:
     - port: 80
-      targetPort: 8089
+      targetPort: 8090
