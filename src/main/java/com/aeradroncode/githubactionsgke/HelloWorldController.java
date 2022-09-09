@@ -10,6 +10,6 @@ public class HelloWorldController {
     @RequestMapping("/")
     @ResponseBody
     public String helloWorld(){
-        return "Hello World From GKE Via Github Actions!"${{secrets.GKE_DB}};
+        return "Hello World From GKE Via Github Actions!";
     }
 }
