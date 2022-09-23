@@ -17,9 +17,9 @@ spec:
           image: gcr.io/PROJECT_ID/IMAGE:TAG
           resources:
             limits:
-              cpu: 500m
-              memory: 512Mi
-            requests:
               cpu: 200m
               memory: 256Mi
+            requests:
+              cpu: 100m
+              memory: 128Mi
           imagePullPolicy: Always
