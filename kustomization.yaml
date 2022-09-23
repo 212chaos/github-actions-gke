@@ -4,4 +4,4 @@ kind: Kustomization
 resources:
   - service.yaml
   - deployment.yaml
-  - github-actions-runner-hpa.yaml
+  - hpa.yaml
